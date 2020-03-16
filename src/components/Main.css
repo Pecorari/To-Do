@@ -1,5 +1,5 @@
 .main {
-  background-color: rgb(127, 190, 245);
+  background-color: white;
   padding: 30px;
   margin: 50px auto;
   max-width: 500px;
@@ -12,3 +12,71 @@
   text-align: center;
 }
 
+.form {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input[type="text"] {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 20px;
+  border: 1px solid #cccccc;
+  min-width: 80%;
+}
+
+.form button[type="submit"] {
+  border: none;
+  height: 40px;
+  width: 40px;
+  background-color: #F2AE30;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarefas {
+  margin-top: 30px;
+}
+
+.tarefas li {
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  transition: all 450ms;
+}
+
+.tarefas li:hover {
+  background: #30BF97;
+}
+
+.tarefas li .edit {
+  margin-right: 15px;
+  color: #D97B29;
+}
+
+.tarefas li .delete {
+  margin-right: 15px;
+  color: #D93636;
+}
+
+.tarefas li .edit,
+.tarefas li .delete {
+  cursor: pointer;
+}
+
+.tarefas li:hover .edit,
+.tarefas li:hover .delete {
+  color: black;
+  transition: all 450ms;
+}
+
+.tarefas li span {
+  display: flex;
+  align-items: center;
+}
